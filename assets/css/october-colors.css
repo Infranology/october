@@ -1,0 +1,88 @@
+/**
+ * General.
+ */
+body {
+  background-color: #EBF3F5;
+  color: #333;
+}
+
+div#page {
+  background-color: #FFF;
+}
+
+
+/**
+ * Headings.
+ */
+#site-name a {
+  color: #FFF;
+}
+
+div.block h2.title {
+  color: #CCC;
+}
+
+
+/**
+ * Links. LoVe HAte.
+ */
+a {
+  color: #0086C3;
+}
+
+a:visited {
+  color: #0080AA;
+}
+
+/** Footer. */
+div#footer a {
+  color: #FFF;
+}
+
+div#footer a:visited {
+  color: #EEE;
+}
+
+div#footer div.block div.edit a {
+  color: #666;
+}
+
+/** Primary links menu. */
+div#site-menu ul.links li a {
+  background-color: #242B33;
+  color: #FFF;
+}
+
+div#site-menu ul.links li.active a,
+div#site-menu ul.links li a:hover {
+  background-color: #FFF;
+  color: #242B33;
+}
+
+
+/**
+ * Content.
+ */
+
+/** News views. */
+div.views-field-created {
+  color: #AAA;
+}
+
+/** Comments. */
+div.comment {
+  background-color: #F5F5F5;
+}
+
+div.comment-by-node-author {
+  background-color: #F5F4C4;
+}
+
+
+/**
+ * Footer.
+ */
+div#footer {
+  background-color: #242B33;
+  color: #FFF;
+}

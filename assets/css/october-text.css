@@ -1,0 +1,122 @@
+/**
+ * Font families.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#site-name,
+#mission,
+#site-menu ul.links li a {
+  font-family: Georgia, "Times New Roman", Helvetica, Verdana, sans-serif;
+}
+
+
+/**
+ * Headings.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+h1,
+#mission {
+  font-size: 30px;
+}
+
+h1#site-name,
+#site-name a {
+  font-size: 28px;
+  line-height: 100%;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+div.block h2.title {
+  border-top: 1px solid;
+  font-size: 12px;
+  font-weight: normal;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+
+
+/**
+ * Links: LoVe HAte.
+ */
+a:hover,
+#site-name a {
+  text-decoration: none;
+}
+
+/** Primary links menu. */
+div#site-menu ul.links li a {
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/** Secondary links menu. */
+ul.secondary-menu.links li {
+  display: block;
+}
+
+/** Footer */
+div#footer a.active {
+  font-weight: bold;
+}
+
+
+/**
+ * Listings.
+ */
+ol,
+ul {
+  list-style-position: inside;
+  line-height: 100%;
+}
+
+ol li,
+ul li {
+  line-height: 200%;
+}
+
+/** Node. */
+div.node-links ul.links.inline {
+  display: block;
+  float: left;
+}
+
+div.node-links ul.links li {
+  float: left;
+  line-height: 100%;
+}
+
+div.node-links ul.links li.first {
+  padding-left: 0;
+}
+
+div.node-links ul.links li.last {
+  padding-right: 0;
+}
+
+div.node-teaser div.node-links ul.links li.node_read_more {
+  padding-right: 30px;
+}
+
+
+/**
+ * Views.
+ */
+div.views-field-created {
+  font-size: 11px;
+}

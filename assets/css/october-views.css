@@ -1,0 +1,111 @@
+/**
+ * General.
+ */
+div.block div.views-row {
+  margin-bottom: 15px;
+}
+
+
+/**
+ * Profile views.
+ */
+
+/** Author block. */
+div.view-drupen-profile-author div.view-content,
+div.node-type-drupen-profile div.content {
+  overflow: hidden;
+}
+
+div.block div.view-drupen-profile-author div.views-field-field-drupen-profile-picture-fid {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+div.field-field-drupen-profile-facebook,
+div.field-field-drupen-profile-linkedin,
+div.field-field-drupen-profile-twitter,
+div.field-field-drupen-profile-website,
+div.block div.view-drupen-profile-author div.views-field-field-drupen-profile-facebook-url,
+div.block div.view-drupen-profile-author div.views-field-field-drupen-profile-linkedin-url,
+div.block div.view-drupen-profile-author div.views-field-field-drupen-profile-twitter-url,
+div.block div.view-drupen-profile-author div.views-field-field-drupen-profile-website-url {
+  float: left;
+  margin-right: 5px;
+  width: 16px;
+}
+
+div.field-field-drupen-profile-facebook a,
+div.field-field-drupen-profile-linkedin a,
+div.field-field-drupen-profile-twitter a,
+div.field-field-drupen-profile-website a,
+div.block div.view-drupen-profile-author div.views-field-field-drupen-profile-facebook-url a,
+div.block div.view-drupen-profile-author div.views-field-field-drupen-profile-linkedin-url a,
+div.block div.view-drupen-profile-author div.views-field-field-drupen-profile-twitter-url a,
+div.block div.view-drupen-profile-author div.views-field-field-drupen-profile-website-url a {
+  background-position: left top;
+  background-repeat: no-repeat;
+  display: block;
+  text-indent: -20000px;
+}
+
+div.field-field-drupen-profile-facebook a,
+div.block div.view-drupen-profile-author div.views-field-field-drupen-profile-facebook-url a {
+  background-image: url('../images/facebook.png');
+}
+
+div.field-field-drupen-profile-linkedin a,
+div.block div.view-drupen-profile-author div.views-field-field-drupen-profile-linkedin-url a {
+  background-image: url('../images/linkedin.png');
+}
+
+div.field-field-drupen-profile-twitter a,
+div.block div.view-drupen-profile-author div.views-field-field-drupen-profile-twitter-url a {
+  background-image: url('../images/twitter.png');
+}
+
+div.field-field-drupen-profile-website a,
+div.block div.view-drupen-profile-author div.views-field-field-drupen-profile-website-url a {
+  background-image: url('../images/world.png');
+}
+
+
+/**
+ * Photo gallery views.
+ */
+
+/** Page view. */
+div.view-drupen-gallery-photo div.view-content {
+  max-width: 640px;
+}
+
+div.view-drupen-gallery-photo div.view-content table.views-view-grid tr td {
+  padding-bottom: 20px;
+}
+
+div.view-drupen-gallery-photo div.view-content table.views-view-grid tr td,
+div.view-drupen-gallery-photo div.view-content table.views-view-grid tr td div,
+div.view-drupen-gallery-photo div.view-content table.views-view-grid tr td div img {
+  vertical-align: top;
+}
+
+div.view-drupen-gallery-photo div.view-content table.views-view-grid tr td,
+div.view-drupen-gallery-photo div.view-content table.views-view-grid tr td div {
+  width: 140px;
+}
+
+/** Slider. Photo node. */
+div.node-type-drupen-photo div.view-drupen-gallery-photo div.view-content {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+div.node-type-drupen-photo div.view-drupen-gallery-photo div.view-content table.views-view-grid tr td,
+div.node-type-drupen-photo div.view-drupen-gallery-photo div.view-content table.views-view-grid tr td div {
+  padding-bottom: 0;
+  width: 91px;
+}
+
+div.node-type-drupen-photo div.field-field-drupen-photo-description,
+div.node-type-drupen-photo div.field-field-drupen-photo-gallery {
+  margin-bottom: 20px;
+}

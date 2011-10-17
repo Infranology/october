@@ -1,0 +1,140 @@
+/* $Id: ie.css,v 1.2 2009/07/05 20:01:10 duvien Exp $ */
+
+/**
+ * IE CSS
+ *
+ * CSS targeted specifically for Internet Explorer for Windows.
+ *
+ * While building your theme, you should be aware that IE limits Drupal to 31
+ * stylesheets total. The work-around for the bug is to enable CSS aggregation
+ * under: admin / settings / performance.
+ *
+ * Properties starting with an underscore _ are for IE 5 and 6 only.
+ * Properties starting with head:first-child+body are for IE7 only.
+ * Properties with a child selector (>) or sibling selector (+) are for IE7 only.
+ *
+ * References:
+ *
+ * 1. http://www.positioniseverything.net/explorer/doubled-margin.html
+ * 2. http://browservulsel.blogspot.com/2005/04/ie-overflow-auto-scrollbar-overlap.html
+ * 3. http://www.howtocreate.co.uk/wrongWithIE/?chapter=overflow%3Avisible%3B
+ */
+
+body {
+  /* 1st part of IE5/IE6 quirks centering hack. */
+  _text-align: center;
+}
+
+#page {
+  /* 2nd part of IE5/IE6 quirks centering hack. */
+  _text-align: left;
+}
+
+/* Main (container for everything else). */
+#main {
+  /*
+   * Otherwise with a liquid layout, sidebars disappear when resizing the
+   * windows in IE6.
+   */
+  _zoom: 1;
+}
+
+/* Floating divs */
+#content,
+#navbar,
+#sidebar-left,
+#sidebar-right {
+  /* Display inline or double your floated margin! [1]. */
+  _display: inline;
+  /* In IE6, overflow auto is broken [2] and so is overflow visible [3]. */
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* Tabs CSS - IE5 and 6 don't support PNGs with alpha transparency. */
+ul.primary li a,
+ul.primary li a .tab,
+ul.secondary li a,
+ul.secondary li a .tab {
+  /* Otherwise the blocks mistakenly get 100% width in IE5. */
+  _display: inline;
+  /* Otherwise the blocks mistakenly get 100% width in IE6. */
+  _di\splay: inline-block;
+  cursor: pointer;
+}
+
+ul.primary,
+ul.secondary {
+  /* Otherwise IE5 treats the ul as floated. */
+  _width: 100%;
+  /* Reset to auto width for IE6. */
+  _w\idth: auto;
+}
+
+ul.primary li a {
+  _background: url(images/tab-left-ie6.png) no-repeat left -38px;
+}
+
+ul.primary li a .tab {
+  _background: url(images/tab-right-ie6.png) no-repeat right -38px;
+}
+
+ul.primary li a:hover {
+  _background: url(images/tab-left-ie6.png) no-repeat left -76px;
+}
+
+ul.primary li a:hover .tab {
+  _background: url(images/tab-right-ie6.png) no-repeat right -76px;
+}
+
+ul.primary li.active a,
+ul.primary li.active a:hover {
+  _background: url(images/tab-left-ie6.png) no-repeat left 0;
+}
+
+ul.primary li.active a .tab,
+ul.primary li.active a:hover .tab {
+  _background: url(images/tab-right-ie6.png) no-repeat right 0;
+}
+
+/**
+ * Messages - IE 5 and 6 don't support PNGs with alpha transparency.
+ */
+
+/* Important messages (status, warning, and error) for the user. */
+div.messages,
+div.status,
+div.warning,
+div.error {
+  _background-image: url(images/messages-status-ie6.png);
+}
+
+/* Medium priority messages. */
+div.warning {
+  _background-image: url(images/messages-warning-ie6.png);
+}
+
+/* High priority messages. See also the .error declaration below. */
+div.error  {
+  _background-image: url(images/messages-error-ie6.png);
+}
+
+/* Drupal nodes. */
+.node-unpublished .node-inner>* {
+  /* Otherwise these elements will appear below the "Unpublished" text. */
+  position: relative;
+}
+
+/* Drupal admin tables. */
+.section-admin #content tr.even th,
+.section-admin #content tr.even td,
+.section-admin #content tr.odd th,
+.section-admin #content tr.odd td {
+  /* IE doesn't display borders on table rows. */
+  border-bottom: 1px solid #CCC;
+}
+
+/* Theme settings styles. */
+#zen-settings fieldset .form-item label {
+  _display: inline-block;
+}

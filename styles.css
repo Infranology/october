@@ -1,0 +1,132 @@
+/* $Id: styles.css,v 1.1 2009/06/26 00:33:39 duvien Exp $ */
+
+h1#site-name {
+  margin-bottom: 0;
+}
+
+#site-header,
+#site-subheader,
+#footer-region,
+.column,
+.node,
+.comment,
+.block {
+  margin-bottom: 1.5em;
+}
+
+pre, code {
+  /* Monospace fonts can be hard to read. */
+  font-size: 1.0em;
+  font-family: "Bitstream Vera Sans Mono", "Courier New", monospace;
+}
+
+table {
+  border-collapse: collapse;
+  /* Prevent cramped-looking tables. */
+  width: 100%;
+}
+
+th,
+thead th,
+tbody th {
+  text-align: left;
+  padding-right: 0;
+  border-bottom: none;
+}
+
+tbody {
+  border-top: none;
+}
+
+abbr {
+  border-bottom: 1px dotted #CCC;
+  cursor: help;
+  white-space: nowrap;
+}
+
+/*
+ * Date-based "abbreviations" show computer-friendly timestamps which are not
+ * human-friendly.
+ */
+abbr.created {
+  border: none;
+  cursor: auto;
+  white-space: normal;
+}
+
+img {
+  border: 0;
+}
+
+hr {
+  height: 1px;
+  border: 1px solid #CCC;
+}
+
+fieldset {
+  margin: 1em 0;
+  padding: 0.5em;
+  border: 1px solid #CCC;
+}
+
+
+/**
+ * Skip links. Based on Garland: http://drupal.org/node/790192#comment-2930624
+ */
+#skip-links a {
+  background: #FFF;
+  font-size: 80%;
+  font-weight: bold;
+  text-align: right;
+  text-decoration: none;
+  padding: 0px 5px;
+  left: auto;
+  top: -99em;
+  position: absolute;
+}
+
+#skip-links a:hover,
+#skip-links a:focus,
+#skip-links a:active  {
+  height: auto;
+  width: auto;
+  overflow: visible;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+/**
+ * Formatting for administration page.
+ *
+ * The admin panel styles are a mess. IE has problems with this so this is
+ * only a temporary fix. This should be fixed in core.
+ */
+div.admin-panel {
+  padding: 0;
+}
+
+div.admin-panel .body {
+  padding: 0 !important;
+}
+
+div.admin .left,
+div.admin .right {
+  width: 50%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+div.admin .right .admin-panel {
+  margin-left: 10px;
+}
+
+/* Theme settings */
+#div-zen-debug strong {
+  float: left;
+  width: 90px;
+  margin-left: 0;
+  margin-right: 10px;
+  text-align: left;
+}

@@ -1,0 +1,182 @@
+/**
+ * Site header.
+ */
+div#site-header {
+  min-height: 140px;
+  position: relative;
+}
+
+/** Tools region */
+div#tools {
+  padding: 5px 0 5px 0;
+  position: absolute;
+  z-index: 10;
+}
+
+div#tools div#search-box {
+  float: right;
+}
+
+div#tools div.block-search {
+  margin-bottom: 0;
+}
+
+/** Banner region. */
+div#banner {
+  position: relative;
+}
+
+div#banner div.block {
+  margin-bottom: 0;
+}
+
+/** Logo, site name. */
+div#branding {
+  background: url('../images/logo-background.png') left bottom no-repeat;
+  height: 90px;
+  position: absolute;
+  left: -22px;
+  top: 50px;
+  z-index: 100;
+}
+
+div#branding-inner {
+  background-color: #242B33;
+  padding: 0 20px 0 20px;
+  height: 72px;
+}
+
+div#branding span {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+div#branding.no-site-name span {
+  margin-right: 0;
+}
+
+div#branding #site-name {
+  margin-top: 20px;
+}
+
+div#branding-inner,
+div#branding span,
+div#branding #site-name {
+  float: left;
+}
+
+/** Site menu */
+div#site-menu {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  text-align: right;
+  z-index: 100;
+}
+
+div#site-menu ul.links {
+  float: right;
+}
+
+div#site-menu ul.links li {
+  display: block;
+  float: left;
+  line-height: 40px;
+}
+
+div#site-menu ul.links li.last {
+  padding-right: 0;
+}
+
+ul.secondary-menu {
+  margin-bottom: 20px;
+}
+
+
+/**
+ * Content.
+ */
+
+/** Sidebars. */
+div#sidebar-left-inner {
+  padding-left: 20px;
+}
+
+div#sidebar-right-inner {
+  padding-right: 20px;
+}
+
+/** Node. */
+div.node-teaser {
+  margin-bottom: 40px;
+}
+
+div#content-inner {
+  padding: 0 20px;
+}
+
+div.node h2.title {
+  margin-bottom: 15px;
+}
+
+div.node div.meta {
+  margin-bottom: 10px;
+}
+
+/** Comments */
+div#comments div.indented {
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+div.comment {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+div.comment h3.title {
+  margin-bottom: 10px;
+}
+
+div.comment div.picture {
+  float: left;
+  margin: 0 15px 10px 0;
+}
+
+/** Photo node. */
+div.node-type-drupen-profile div.content {
+  margin-bottom: 20px;
+}
+
+
+/**
+ * Footer.
+ */
+div#footer {
+  float: left;
+  width: 100%;
+}
+
+div#footer-inner {
+  padding: 20px;
+}
+
+
+/**
+ * Misc.
+ */
+
+/** Mission */
+div#mission {
+  padding: 0 30px 40px 30px;
+}
+
+/** Messages */
+div.messages {
+  margin-bottom: 20px;
+}
+
+/** Pager */
+ul.pager {
+  margin-bottom: 20px;
+}
