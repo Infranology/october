@@ -1,0 +1,43 @@
+README
+==
+
+Introduction
+--
+
+October is a simple theme for the Drüpen distribution (http://drupen.org) based
+on the Zen nineSixty theme.
+
+This theme exposes two additional regions not available in Zen nineSixty: tools
+and banner. The tools region is localized at the top of the page. The banner
+region too, but the diference is that all the content of this region will be
+behind of the header and tools regions elements.
+
+The theme also have styles for better presentation of the Drüpen node types.
+
+
+Installing
+--
+
+Install it as a common Drupal theme: http://drupal.org/node/456
+
+
+Development
+--
+
+This theme was based on a patched Zen nineSixty 6.x-4.3 theme. The patches are
+available in this Gist: https://gist.github.com/1285773
+
+The patches fixes the markup according to the Drupal Coding Standards (see
+issues http://drupal.org/node/984796 & http://drupal.org/node/983542) and also
+fixes a compatibility issue with the CDN module and the skip links.
+
+
+Images credits
+--
+
+The images available at `assets/images`, `facebook.png`, `linkedin.png`,
+and `twitter.png` are from the Service Links module iconset
+(http://drupal.org/project/service_links).
+
+The image `world.png` is from the FAMFAMFAM Silk Icons set, available at:
+http://www.famfamfam.com/lab/icons/silk/.
