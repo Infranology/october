@@ -139,6 +139,7 @@
     </div> <!--//end #sidebar-right-inner -->
     <?php endif; ?>
 
+    <?php if ($footer || $footer_message): ?>
     <div id="footer">
       <div id="footer-inner" class="clear-block">
       <?php if ($footer): ?>
@@ -152,6 +153,7 @@
       <?php endif; ?>
       </div> <!--//end #footer-inner -->
     </div> <!-- /#footer -->
+    <?php endif; ?>
 
   </div> <!-- /#page -->
 
