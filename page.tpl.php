@@ -48,6 +48,7 @@
       <?php endif; ?>
 
       <div id="header-inner">
+        <?php if ($linked_logo_img || $site_name): ?>
         <div id="branding" <?php if (!$site_name): ?>class="no-site-name"<?php endif; ?>>
           <div id="branding-inner">
             <?php if ($linked_logo_img): ?>
@@ -65,6 +66,7 @@
             <?php endif; ?>
           </div>
         </div> <!--/#branding -->
+        <?php endif; ?>
 
         <?php if ($main_menu_links): ?>
         <div id="site-menu">
