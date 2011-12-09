@@ -7,7 +7,7 @@ name = "October"
 project = "october"
 project status url = "http://dev.infranology.com.br/fserver"
 screenshot = assets/images/screenshot.png
-version = "6.x-1.0"
+version = "6.x-1.1"
 
 
 ; This section adds CSS files to your theme. The media type is specified in
